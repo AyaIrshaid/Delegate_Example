@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Inherit from custom protocol
 class ViewController: UIViewController, SettingsDelegate {
 
     
@@ -30,6 +31,7 @@ class ViewController: UIViewController, SettingsDelegate {
     
     
     // MARK: - Delegate Methods
+    // Implement the custom protocol method, update the view based on the selected mode
     func didSelectMode(mode: Int) {
         
         //
@@ -58,7 +60,6 @@ class ViewController: UIViewController, SettingsDelegate {
     
     
     //MARK: - View Methods
-    
     func closeOpenSideView(){
         settingsViewIsVisible = !settingsViewIsVisible
         leftConstraint.constant = settingsViewIsVisible ? 207 : 0

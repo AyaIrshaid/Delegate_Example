@@ -8,18 +8,18 @@
 
 import UIKit
 
-//
+// Custom protocol
 protocol SettingsDelegate{
     func didSelectMode(mode:Int)
 }
 
 class SettingsSideView: UIView {
 
-   //
+   // Define a variable of type custom protocol
     var delegate : SettingsDelegate!
    
     
-    required init?(coder aDecoder: NSCoder) { // for using custom views in IB
+    required init?(coder aDecoder: NSCoder) { 
         super.init(coder: aDecoder)
         
     }
@@ -27,6 +27,7 @@ class SettingsSideView: UIView {
     
     @IBAction func modeSelected(_ sender: UIButton) {
         
+        // Call the protocol method when a mode is selected
         // Light == 0
         // Dark == 1
         self.delegate?.didSelectMode(mode: sender.tag)
