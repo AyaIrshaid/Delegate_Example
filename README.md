@@ -1,6 +1,6 @@
 # Example on delegates
 
-Update main view when mode selected from side settings menu.
+Update main view when mode selected from settings menu.
 
 Notes:
 
