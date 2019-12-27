@@ -50,7 +50,7 @@ class ViewController: UIViewController, SettingsDelegate {
 
 ```swift
 // set delegate of 'settingsSideview' to self
-        settingsSideView.delegate = self
+settingsSideView.delegate = self
 ```
 
 **3.** Implement the custom protocol method, in which update the main view based on the selected mode.
