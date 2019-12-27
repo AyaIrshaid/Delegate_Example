@@ -7,7 +7,9 @@ Update main view when mode selected from settings menu, using delegates.
 
 ## Notes:
 
-* Outside `SettingsSideView`, create custom protocol.
+### Outside `SettingsSideView`:
+
+* Create custom protocol.
 
 > I called it 'SettingsDelegate'.
 
@@ -18,7 +20,7 @@ protocol SettingsDelegate{
 }
 ```
 
-* In `SettingsSideView`:
+### In `SettingsSideView`:
 
 **1.** Define a variable of type custom protocol.
 
@@ -33,7 +35,7 @@ protocol SettingsDelegate{
  self.delegate?.didSelectMode(mode: sender.tag)
 ```
 
-* In main view:
+###In main view:
 
 **1.** Inherit from custom protocol.
 
