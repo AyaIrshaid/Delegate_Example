@@ -9,6 +9,7 @@ Update main view when mode selected from settings menu, using delegates.
 
 * Outside `SettingsSideView`, create custom protocol.
 
+> I called it 'SettingsDelegate'.
 
 ```swift
 // Custom protocol
@@ -35,6 +36,8 @@ protocol SettingsDelegate{
 * In main view:
 
 **1.** Inherit from custom protocol.
+
+> That I called 'SettingsDelegate'.
 
 ```swift
 // Inherit from custom protocol
