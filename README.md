@@ -49,7 +49,7 @@ class ViewController: UIViewController, SettingsDelegate {
 **2.** Set delegate of `SettingsSideView` to self.
 
 ```swift
-// set delegate of 'settingsSideview' to self
+// Set delegate of 'settingsSideview' to self
 settingsSideView.delegate = self
 ```
 
