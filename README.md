@@ -9,7 +9,7 @@ Update main view when mode selected from settings menu, using delegates.
 
 ### Outside `SettingsSideView`:
 
-* Create custom protocol.
+**1.** Create custom protocol.
 
 > I called it 'SettingsDelegate'.
 
