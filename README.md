@@ -35,7 +35,7 @@ protocol SettingsDelegate{
  self.delegate?.didSelectMode(mode: sender.tag)
 ```
 
-###In main view:
+### In main view:
 
 **1.** Inherit from custom protocol.
 
